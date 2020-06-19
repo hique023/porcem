@@ -24,3 +24,25 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.title {
+    text-align: center;
+}
+
+.icon-7em {
+    font-size: 6em;
+    margin: 10%;
+}
+
+ion-button {
+    --border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+ion-card {
+    border-radius: 10px;
+  }

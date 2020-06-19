@@ -1,0 +1,87 @@
+<ion-content>
+
+  <ion-card>
+
+    <ion-grid>
+      
+      <h1>Operação simples de Porcentagem</h1>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Valor em %</ion-label>
+            <ion-input type="number" [(ngModel)]="valorPorcentagem"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Montante total</ion-label>
+            <ion-input type="number" [(ngModel)]="montTotal1"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="9">
+          <ion-button color="danger" expand="block" fill="outline" (click)="calPorcem()">
+            <ion-icon name="calculator"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button color="danger" expand="block" (click)="cleanAllSimples()">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <h1>Resposta</h1>
+
+      <ion-item>
+        <ion-label> {{ texto1 }} </ion-label>
+      </ion-item>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+    <ion-grid>
+      
+      <h1>Saiba a Porcentagem</h1>
+      
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Valor gasto</ion-label>
+            <ion-input type="number" [(ngModel)]="quantidade"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Montante total</ion-label>
+            <ion-input type="number" [(ngModel)]="montTotal2"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="9">
+          <ion-button color="danger" expand="block" fill="outline" (click)="opInversa()">
+            <ion-icon name="calculator"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button color="danger" expand="block" (click)="cleanAllInverso()">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h1>Resposta</h1>
+
+      <ion-item>
+        <ion-label> {{ texto2 }} </ion-label>
+      </ion-item>
+
+  </ion-card>
+
+</ion-content>

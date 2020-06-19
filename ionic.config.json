@@ -1,5 +1,7 @@
 {
   "name": "PorCem",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
